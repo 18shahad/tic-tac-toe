@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ul tag to sort some of the elements on the left -->
+    <ul>
+        <li>
+            <h2>It's X's turn!</h2>
+        </li>
+        <li>
+            <!-- to let the user choose to start with X or O  -->
+            <div id='hide'> <span class="text">Choose a side : </span>
+
+                <button id="chooseP1" class="btn btn-primary">X</button><span class="text"> or </span><button
+                    id="chooseP2" class="btn btn-primary">O</button></div>
+        </li>
+        <!-- to let the user choose the background color  -->
+        <li>
+            Select your background color: <input type="color" name="favcolor" id="favcolor">
+        </li>
+
+        <li>
+            <p id='whoWin'> </p>
+        </li>
+        <li>
+            <p id='countx'></p>
+        </li>
+        <li>
+            <p id='counto'></p>
+        </li>
+        <li>
+            <p id='countTie'></p>
+        </li>
+
+        <!-- <li>
+            <form onchange="howManyPlayers()">
+                <input type="radio" name="player" id="one" value="onePlayer"> <label for="one">One Player</label>
+                <input type="radio" name="player" id="two" value="twoPlayers" checked> <label for="two">Two
+                    Players</label>
+            </form>
+        </li> -->
+
+    </ul>
+
+
+    <h1>Tic-Tac-Toe</h1>
+    <div class="container column">
+        <div class="container wrap" id="board">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+
+
+
+        <button id="playAgine">Play Again</button>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
